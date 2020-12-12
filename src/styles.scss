@@ -1,0 +1,21 @@
+$color: green;
+
+body {
+	background: $color;
+}
+::placeholder {
+	color: gray;
+}
+
+:fullscreen {
+	h1 {
+		color: orange;
+	}
+}
+
+.logo {
+	background: url('./images/logo-type.png') no-repeat center center;
+	background-size: cover;
+	width: 340px;
+	height: 75px;
+}
