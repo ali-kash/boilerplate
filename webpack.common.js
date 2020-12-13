@@ -4,7 +4,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const MinifyPlugin = require('babel-minify-webpack-plugin');
 
 module.exports = {
-	// context: path.resolve(__dirname, 'src'),
 	entry: {
 		main: './src/index.js',
 		vendor: './src/vendor.js',

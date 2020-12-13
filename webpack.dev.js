@@ -7,7 +7,7 @@ module.exports = merge(common, {
 	devtool: 'cheap-module-eval-source-map',
 	output: {
 		filename: '[name].js',
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, 'build'),
 	},
 	devServer: {
 		contentBase: path.resolve(__dirname, 'src'),

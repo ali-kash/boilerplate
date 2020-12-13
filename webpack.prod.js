@@ -8,7 +8,7 @@ module.exports = merge(common, {
 	devtool: 'source-map',
 	output: {
 		filename: '[name].[hash:6].js',
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, 'build'),
 	},
 	module: {
 		rules: [
