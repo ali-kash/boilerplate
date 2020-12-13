@@ -6,6 +6,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = merge(common, {
 	mode: 'production',
 	devtool: 'source-map',
+	output: {
+		filename: '[name].[hash:6].js',
+		path: path.resolve(__dirname, 'dist'),
+	},
 	module: {
 		rules: [
 			{

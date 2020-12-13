@@ -5,13 +5,12 @@ const MinifyPlugin = require('babel-minify-webpack-plugin');
 
 module.exports = {
 	// context: path.resolve(__dirname, 'src'),
-	entry: './src/index.js',
+	entry: {
+		main: './src/index.js',
+		vendor: './src/vendor.js',
+	},
 	resolve: {
 		extensions: ['.js', '.jsx'],
-	},
-	output: {
-		path: path.resolve(__dirname, './dist'),
-		filename: 'bundle.[hash:6].js',
 	},
 
 	module: {

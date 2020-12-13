@@ -1,13 +1,10 @@
 import React from 'react';
-import Test from '../components/myTest.component';
+import JumboTron from '../components/JumboTron/JumboTron.component';
 
-const HomePage = () => {
+export default function HomePage() {
 	return (
 		<>
-			<h1>Home Page!</h1>
-			<Test />
+			<JumboTron />
 		</>
 	);
-};
-
-export default HomePage;
+}

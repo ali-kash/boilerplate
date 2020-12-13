@@ -1,21 +1,16 @@
-$color: green;
+@import './styles/variables';
 
 body {
-	background: $color;
-}
-::placeholder {
-	color: gray;
+	background: $body-color;
 }
 
-:fullscreen {
-	h1 {
-		color: orange;
-	}
+.wrapper {
+	margin-top: 4rem;
 }
 
-.logo {
-	background: url('./images/logo-type.png') no-repeat center center;
-	background-size: cover;
-	width: 340px;
-	height: 75px;
-}
+// .logo {
+// 	background: url('./images/logo-type.png') no-repeat center center;
+// 	background-size: cover;
+// 	width: 340px;
+// 	height: 75px;
+// }

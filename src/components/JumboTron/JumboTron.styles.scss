@@ -1,0 +1,16 @@
+.jumbotron {
+	width: 100vw;
+	height: 75vh;
+	background-image: url(https://placeimg.com/1000/480/nature);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+	.container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

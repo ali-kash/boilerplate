@@ -1,0 +1,35 @@
+.cards {
+	.row {
+		margin-bottom: 1rem;
+	}
+	.col {
+		margin-bottom: 2rem;
+	}
+	.card {
+		&-img-top {
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		&-body {
+			text-align: center;
+			box-shadow: 0px 15px 15px -8px rgba(0, 0, 0, 0.5);
+			h6 {
+				font-size: 14px;
+				text-transform: uppercase;
+				color: deeppink;
+			}
+		}
+
+		&-title {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 24px;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.mx-30 {
+		margin-bottom: 30px;
+	}
+}

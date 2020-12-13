@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.navbar {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	.logo {
+		svg {
+			font-size: 2rem;
+			color: $white;
+		}
+	}
+	.navbar-collapse {
+		width: auto;
+	}
+	.navbar-nav {
+		.nav-link {
+			color: $white;
+			text-transform: uppercase;
+			&.active,
+			&:hover,
+			&:focus {
+				color: $selection-color;
+			}
+		}
+	}
+}
