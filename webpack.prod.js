@@ -2,6 +2,7 @@ const path = require('path');
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = merge(common, {
 	mode: 'production',
@@ -23,8 +24,25 @@ module.exports = merge(common, {
 					esModule: false,
 				},
 			},
+			{
+				test: /\.(scss|css)$/,
+				exclude: /node_modules/,
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader,
+					},
+					'css-loader',
+					'postcss-loader',
+					'sass-loader',
+				],
+			},
 		],
 	},
 
-	plugins: [new CleanWebpackPlugin()],
+	plugins: [
+		new MiniCssExtractPlugin({
+			filename: '[name].[hash:6].css',
+		}),
+		new CleanWebpackPlugin(),
+	],
 });

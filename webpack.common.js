@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 const MinifyPlugin = require('babel-minify-webpack-plugin');
 
 module.exports = {
@@ -30,18 +30,6 @@ module.exports = {
 					},
 				},
 			},
-			{
-				test: /\.(scss|css)$/,
-				exclude: /node_modules/,
-				use: [
-					{
-						loader: MiniCssExtractPlugin.loader,
-					},
-					'css-loader',
-					'postcss-loader',
-					'sass-loader',
-				],
-			},
 		],
 	},
 	plugins: [
@@ -50,9 +38,7 @@ module.exports = {
 			filename: 'index.html',
 			minify: true,
 		}),
-		new MiniCssExtractPlugin({
-			filename: '[name].[hash:6].css',
-		}),
+
 		new MinifyPlugin(
 			{},
 			{

@@ -9,7 +9,7 @@ function JumboTron() {
 	return (
 		<Jumbotron fluid>
 			<Container>
-				<h1>Welcome to the home page!</h1>
+				<h1>Welcome to the home page</h1>
 				<p>
 					This is a simple hero unit, a simple jumbotron-style component for
 					calling extra attention to featured content or information.
