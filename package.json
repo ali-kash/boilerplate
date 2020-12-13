@@ -2,10 +2,13 @@
 	"name": "test",
 	"version": "1.0.0",
 	"description": "",
+	"homepage": "https://ali-kash.github.io/boilerplate/",
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack-dev-server --hot --config webpack.dev.js",
-		"build": "webpack --config webpack.prod.js"
+		"build": "webpack --config webpack.prod.js",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"keywords": [],
 	"author": "",
