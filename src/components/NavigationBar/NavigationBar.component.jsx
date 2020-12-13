@@ -11,7 +11,7 @@ function NavigationBar() {
 	return (
 		<Navbar bg='dark' expand='lg'>
 			<Container>
-				<Navbar.Brand href='/'>
+				<Navbar.Brand href='#/'>
 					<div className='logo'>
 						<BsBuilding />
 					</div>
@@ -19,8 +19,8 @@ function NavigationBar() {
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
 				<Navbar.Collapse id='basic-navbar-nav'>
 					<Nav className='mr-auto'>
-						<Nav.Link href='/cards'>Cards</Nav.Link>
-						<Nav.Link href='/contact'>Contact</Nav.Link>
+						<Nav.Link href='#/cards'>Cards</Nav.Link>
+						<Nav.Link href='#/contact'>Contact</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
